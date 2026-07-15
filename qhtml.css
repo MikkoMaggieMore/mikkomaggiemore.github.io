@@ -61,3 +61,14 @@ head1 {
 body1 {
 	font-size: 20px;
 }
+
+foot1 {
+	color: #aaa;
+	font-size: 14px;
+}
+
+left-heading {
+	margin-top:16px;
+	font-size: 24px;
+	text-align: left;
+}
