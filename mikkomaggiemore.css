@@ -19,6 +19,8 @@
 
 .banner-link-icon {
 	padding:8px;
+	width: 16px;
+	height:16px;
 }
 
 .page-header-inner {
@@ -51,10 +53,32 @@
 	text-align: center;
 }
 
+.blue-link {
+	color: #3a9fff;
+}
+
 img {
 	user-select: none;
 }
 
 a {
 	user-select: none;
+}
+
+head1 {
+	margin-bottom: 24px;
+}
+
+body1 {
+	margin-bottom: 16px;
+}
+
+divider {
+	margin: 16px 0px;
+	outline: solid 0.5px grey;
+}
+
+foot1 {
+	color: #aaa;
+	font-size: 14px;
 }
