@@ -1,0 +1,63 @@
+body {
+	margin: 0;
+}
+
+block {
+	display: block;
+}
+
+flex {
+	display: flex;
+}
+
+grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: attr(grid-width px);
+}
+
+grid-item {
+	display: block;
+	background: blue;
+	width: 64px;
+	height: 48px;
+}
+
+centerline {
+	display: flex;
+	width: 0px;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+}
+
+centerline > * {
+	position: absolute;
+	width: var(--width);
+	left: calc(var(--width) / -2);
+}
+
+wrapper {
+	display:flex;
+	flex-direction: column;
+}
+
+qbutton {
+	display: inline-block;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	cursor: pointer;
+}
+
+head1 {
+	font-size: 28px;
+}
+
+body1 {
+	font-size: 20px;
+}
