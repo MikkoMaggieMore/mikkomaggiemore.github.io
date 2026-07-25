@@ -77,3 +77,11 @@ divider {
 	margin: 16px 0px;
 	outline: solid 0.5px grey;
 }
+
+.right-links {
+
+}
+
+.links-container {
+	justify-content: space-between;
+}
