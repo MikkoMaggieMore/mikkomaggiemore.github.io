@@ -6,6 +6,10 @@ block {
 	display: block;
 }
 
+app {
+	display: block;
+}
+
 flex {
 	display: flex;
 }
