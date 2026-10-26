@@ -86,6 +86,23 @@ function main(root) {
 					});
 				});
 		break;
+		case "/games/":
+			fetch("../xml/games.xml")
+				.then((response) => response.text())
+				.then((text) => {
+					const doc = new DOMParser().parseFromString(text, "text/xml");
+					doc.querySelectorAll("group").forEach((group) => {
+						const groupName = group.getAttribute("name");
+						const games = [...group.querySelectorAll("game")].map((game) => game.textContent.trim());
+						clAssign(new Text(groupName, 24), "#website-content-main");
+						clAssign(new Separator(0), "#website-content-main");
+						for (let i = 0; i < games.length; i++) {
+							clAssign(new TextLink(games[i], 16, `../game-files/${games[i]}`), "#website-content-main");
+						}
+						clAssign(new Separator(1), "#website-content-main");
+					});
+				});
+		break;
 		default:
 			console.error("MDG error: Path not defined.");
 		break;
